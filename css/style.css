@@ -1,0 +1,51 @@
+* {
+    color: grey;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    margin: 10px 5px 10px 5px;
+}
+
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+.purple{
+    background-color: blueviolet;
+}
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+h2,h3 {
+    text-align: left;
+}
+
+section {
+    border: 2px solid Tomato;
+}
+
+.lighter{
+    opacity: 0.6;
+}
+
+.light {
+    opacity: 0.3;
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: center;
+    border: 2px solid cadetblue;
+}
