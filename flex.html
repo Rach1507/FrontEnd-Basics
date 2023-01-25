@@ -27,12 +27,30 @@
         </div>
     </section>
     <section>
+        <h2>flex-direction</h2>
+    </section>
+
+
+    <section>
+        <h2>flex-flow
+            <p>
+                This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex
+                container’s main and cross axes. The default value is row nowrap.
+
+                .container {
+                flex-flow: column wrap;
+                }
+            </p>
+        </h2>
+    </section>
+    <section>
         <h2>Flex container , justify content</h2>
         <p>The justify-content property accepts five different values:
 
             flex-start (default): items are packed toward the start line
 
         <p>flex-end: items are packed toward to end line</p> 
+        </p>
         <div class="flexbox-container flex-end">
 
             <div class="box red "> </div>
@@ -66,7 +84,8 @@
 
         </div>
         <p>
-            space-evenly: items are distributed so that the spacing between any two adjacent alignment subjects, before the
+            space-evenly: items are distributed so that the spacing between any two adjacent alignment subjects, before
+            the
             first alignment subject, and after the last alignment subject is the same
         </p>
 
@@ -118,6 +137,35 @@
             <div class="box purple lighter"> </div>
             <div class="box purple light"> </div>
         </div>
+    </section>
+
+    <section>
+        <h2>align-items</h2>
+        <p>
+        <ul>
+            <li>stretch (default)</li>
+            <li>flex-start / start / self-start</li>
+            <li>flex-end / end / self-end:</li>
+            <li>center</li>
+            <li>baseline</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>gap , row-gap, column-gap</h2>
+        <p>  gap: 10px;
+            gap: 10px 20px; /* row-gap column gap */
+            row-gap: 10px;
+            column-gap: 20px;
+        </p>
+        <p>The gap property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges.
+
+        </p>
+    </section>
+
+    <section class="flexbox-container flex-center">
+        <img src="css-flexbox-poster.png" alt="CSS-Flexbox-cheatsheet">
     </section>
 
 

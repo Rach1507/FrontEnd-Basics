@@ -35,33 +35,52 @@
 }
 
 .purple {
-    background-color: blueviolet;
+    background-color: blueviolet ;
 }
 
 h1 {
-    color: blueviolet;
-    text-align: center;
+    color: blueviolet ;
+    text-align: center ;
 }
 
 h2,
 h3 {
-    text-align: left;
+    text-align: left ;
 }
 
 section {
-    border: 10px solid black;
-    padding: 5%;
+    border: 10px solid black ;
+    padding: 5% ;
 }
 
 .lighter {
     opacity: 0.6;
+    /* grid-area:  main ; */
 }
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.footer{
+    grid-area: footer;
+}
+
 
 .light {
     opacity: 0.3;
+    /* grid-area: footer ; */
 }
 
 .flexbox-container {
+
     display: flex;
     border: 2px solid cadetblue;
 }
@@ -85,3 +104,40 @@ section {
 .space-evenly{
     justify-content: space-evenly;
 }
+
+img{
+    width: 50%;
+
+}
+
+/* Grid */
+
+.grid-container{
+    display: grid;
+    /* block grid */
+    grid-template-columns : 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-inline-container{
+    display: inline-grid;
+    grid-template-columns : 25% 25% 25% 25%;
+    grid-template-rows: repeat(3, 33%);
+
+    /* grid-template-rows: 33% 33% 33% ; */
+}
+
+.grid-areas-container{
+    display: grid;
+    /* block grid */
+    grid-template-columns : 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "main . . sidebar"
+    "footer footer footer footer"
+}
+
+
+
+
