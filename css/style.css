@@ -130,7 +130,7 @@ img{
 .grid-areas-container{
     display: grid;
     /* block grid */
-    grid-template-columns : 1fr 1fr 1fr 1fr ;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "header header header header"
